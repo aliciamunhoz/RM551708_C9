@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+.main-home{
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-home{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-home > h1{
+    font-size: 3vw  ;
+    color: #271e6f;
+}
+
+.left-home-img{
+    width: 35vw;
+}
+
+.right-home{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-home{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #d4d2e2;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #938fb7;
+}
+
+.card-home > h3{
+    color: #271e6f;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-home > label{
+    color: #271e6f;
+    font-weight: 800;
+    margin: 0;
+}
+
+@media only screen and (max-width: 650px){
+    .card-home{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .main-home{
+        flex-direction: column;
+    }
+    .left-home > h1{
+        display: none;
+    }
+    .left-home{
+        width: 100%;
+        height: auto;
+    }
+    .right-home{
+        width: 100%;
+        height: auto;
+    }
+    .left-home-img{
+        width: 50vw;
+    }
+    .card-home{
+        width: 90%;
+    }
+    
+}
